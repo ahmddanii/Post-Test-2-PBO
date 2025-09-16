@@ -6,6 +6,39 @@ Kelas   : B
 
 # Sistem Manajemen Jadwal Peluncuran Roket NASA
 Program ini adalah sebuah sistem CRUD (Create, Read, Update, Delete) sederhana yang digunakan untuk memanajemen jadwal penluncuran roket pada NASA (National Aeronautics and Space Administration).
+
+## Struktur Program
+<img width="227" height="233" alt="image" src="https://github.com/user-attachments/assets/8f5634bb-9997-44a4-b92b-95737075e01f" />
+
+### 1. `com.mycompany.kpr.main`
+- **`Main.java`**
+  - Berisi **entry point** program (`public static void main`).
+  - Digunakan untuk menjalankan aplikasi.
+  - Biasanya memanggil class dari `service` untuk memproses data.
+
+---
+
+### 2. `com.mycompany.kpr.models`
+- **`JadwalRoket.java`**
+  - Berisi **model / entitas data** jadwal roket.
+  - Contoh atribut:
+    - `id` → identitas jadwal
+    - `namaRoket` → nama roket
+    - `tujuan` → tujuan misi
+    - `tanggal` → tanggal peluncuran
+    - `status` → status peluncuran
+  - Dilengkapi **getter & setter** untuk mengatur data.
+
+---
+
+### 3. `com.mycompany.kpr.service`
+- **`RoketService.java`**
+  - Berisi **logika bisnis / layanan** untuk mengelola data roket.
+  - Contoh fungsi:
+    - `tambahJadwal()` → menambahkan jadwal baru
+    - `hapusJadwal()` → menghapus jadwal tertentu
+    - `updateStatus()` → memperbarui status peluncuran
+    - `tampilJadwal()` → menampilkan semua jadwal
 ## Alur Program
 1. Menu Utama
    
